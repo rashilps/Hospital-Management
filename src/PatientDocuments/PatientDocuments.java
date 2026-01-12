@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package MedicalImage;
+package PatientDocuments;
 
 import hospital.management.Dashboard;
 import hospital.management.MainFrame;
@@ -11,14 +11,14 @@ import hospital.management.MainFrame;
  *
  * @author Rashi
  */
-public class MedicalImages extends javax.swing.JPanel {
+public class PatientDocuments extends javax.swing.JPanel {
 
     private final MainFrame parent;
 
     /**
      * Creates new form ViewAllPatient
      */
-    public MedicalImages(MainFrame parent) {
+    public PatientDocuments(MainFrame parent) {
         initComponents();
         this.parent = parent;
 
@@ -47,10 +47,10 @@ public class MedicalImages extends javax.swing.JPanel {
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Lab Reports");
+        jLabel3.setText("Patient documents");
 
         jButton4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton4.setText("Upload Medical Images");
+        jButton4.setText("Upload Patient Documents");
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton4MouseClicked(evt);
@@ -63,7 +63,7 @@ public class MedicalImages extends javax.swing.JPanel {
         });
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton5.setText("View Medical Images");
+        jButton5.setText("View Patient Documents");
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton5MouseClicked(evt);
@@ -103,8 +103,8 @@ public class MedicalImages extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 244, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton5)
                 .addGap(56, 56, 56))
@@ -148,7 +148,7 @@ public class MedicalImages extends javax.swing.JPanel {
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         // TODO add your handling code here:
-        parent.showPanel(new UploadMedicalImages(parent));
+        parent.showPanel(new UploadDocuments(parent));
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -158,7 +158,7 @@ public class MedicalImages extends javax.swing.JPanel {
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
         // TODO add your handling code here:
-        parent.showPanel(new ViewMedicalImages(parent));
+        parent.showPanel(new ViewDocuments(parent));
     }//GEN-LAST:event_jButton5MouseClicked
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed

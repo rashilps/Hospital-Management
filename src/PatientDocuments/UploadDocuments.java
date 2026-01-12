@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package MedicalImage;
+package PatientDocuments;
 
 import hospital.management.MainFrame;
 import hospital.management.MainFrame;
@@ -19,7 +19,7 @@ import javax.swing.JOptionPane;
  *
  * @author Rashi
  */
-public class UploadMedicalImages extends javax.swing.JPanel {
+public class UploadDocuments extends javax.swing.JPanel {
 
     private final MainFrame parent;
     private File selectedFile;
@@ -27,7 +27,7 @@ public class UploadMedicalImages extends javax.swing.JPanel {
     /**
      * Creates new form ViewAllPatient
      */
-    public UploadMedicalImages(MainFrame parent) {
+    public UploadDocuments(MainFrame parent) {
         initComponents();
         this.parent = parent;
         loadPatients();    
@@ -153,7 +153,7 @@ public class UploadMedicalImages extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Upload Lab Report");
+        jLabel1.setText("Upload Document");
 
         jComboBoxPatient.setToolTipText("");
         jComboBoxPatient.addActionListener(new java.awt.event.ActionListener() {
@@ -339,7 +339,7 @@ public class UploadMedicalImages extends javax.swing.JPanel {
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         // TODO add your handling code here:
-        parent.showPanel(new MedicalImages(parent));
+        parent.showPanel(new PatientDocuments(parent));
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed

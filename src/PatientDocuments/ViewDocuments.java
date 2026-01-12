@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package MedicalImage;
+package PatientDocuments;
 
 import hospital.management.MainFrame;
 import hospital.management.MainFrame;
@@ -19,14 +19,14 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Rashi
  */
-public class ViewMedicalImages extends javax.swing.JPanel {
+public class ViewDocuments extends javax.swing.JPanel {
 
    private final MainFrame parent;
 
     /**
      * Creates new form ViewAllPatient
      */
-    public ViewMedicalImages(MainFrame parent) {
+    public ViewDocuments(MainFrame parent) {
         initComponents();
         this.parent = parent;
 tblMedicalImages.setModel(new DefaultTableModel(
@@ -93,7 +93,7 @@ tblMedicalImages.setModel(new DefaultTableModel(
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("View Medical Images");
+        jLabel3.setText("View Document");
 
         tblMedicalImages.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -123,7 +123,7 @@ tblMedicalImages.setModel(new DefaultTableModel(
         });
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton5.setText("View Report");
+        jButton5.setText("View Document");
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton5MouseClicked(evt);
@@ -204,7 +204,7 @@ tblMedicalImages.setModel(new DefaultTableModel(
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
         // TODO add your handling code here:
-        parent.showPanel(new MedicalImages(parent));
+        parent.showPanel(new PatientDocuments(parent));
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed

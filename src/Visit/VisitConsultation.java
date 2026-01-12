@@ -42,6 +42,7 @@ public class VisitConsultation extends javax.swing.JPanel {
         jButton9 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jButton6Effect1 = new javax.swing.JButton();
+        jButton4Update1 = new javax.swing.JButton();
 
         jPanel3.setBackground(new java.awt.Color(0, 45, 99));
         jPanel3.setToolTipText("");
@@ -50,7 +51,7 @@ public class VisitConsultation extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Patient Management");
+        jLabel2.setText("Visit/ Consultation Data");
 
         jButton3Add.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton3Add.setText("Add Visit");
@@ -66,7 +67,7 @@ public class VisitConsultation extends javax.swing.JPanel {
         });
 
         jButton4Update.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton4Update.setText("Edit Visit");
+        jButton4Update.setText("Add Notes");
         jButton4Update.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton4UpdateMouseClicked(evt);
@@ -147,6 +148,19 @@ public class VisitConsultation extends javax.swing.JPanel {
             }
         });
 
+        jButton4Update1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton4Update1.setText("Edit Visit");
+        jButton4Update1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4Update1MouseClicked(evt);
+            }
+        });
+        jButton4Update1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4Update1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -163,32 +177,31 @@ public class VisitConsultation extends javax.swing.JPanel {
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 525, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton6Delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton3Add, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 252, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton6Delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton3Add, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 252, Short.MAX_VALUE)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton5View, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButton4Update, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jButton6Effect1)
-                                .addGap(150, 150, 150)))
+                            .addComponent(jButton4Update1, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton5View, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(60, 60, 60))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton6Effect1)
+                .addGap(88, 88, 88)
                 .addComponent(jButton8)
                 .addGap(40, 40, 40))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(243, 243, 243)
+                .addComponent(jButton4Update, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton9))
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton9)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -199,12 +212,17 @@ public class VisitConsultation extends javax.swing.JPanel {
                 .addGap(25, 25, 25)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton6Delete)
-                    .addComponent(jButton4Update))
-                .addGap(18, 18, 18)
-                .addComponent(jButton6Effect1)
-                .addGap(18, 18, 18)
-                .addComponent(jButton8)
-                .addContainerGap(88, Short.MAX_VALUE))
+                    .addComponent(jButton4Update1))
+                .addGap(27, 27, 27)
+                .addComponent(jButton4Update)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(jButton8))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(jButton6Effect1)))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -235,7 +253,7 @@ public class VisitConsultation extends javax.swing.JPanel {
 
     private void jButton4UpdateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4UpdateMouseClicked
         // TODO add your handling code here:
-        parent.showPanel(new UpdateVisit(parent));
+        parent.showPanel(new AddNotes(parent));
     }//GEN-LAST:event_jButton4UpdateMouseClicked
 
     private void jButton4UpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4UpdateActionPerformed
@@ -286,10 +304,19 @@ public class VisitConsultation extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton6Effect1ActionPerformed
 
+    private void jButton4Update1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4Update1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4Update1MouseClicked
+
+    private void jButton4Update1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4Update1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4Update1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton3Add;
     private javax.swing.JButton jButton4Update;
+    private javax.swing.JButton jButton4Update1;
     private javax.swing.JButton jButton5View;
     private javax.swing.JButton jButton6Delete;
     private javax.swing.JButton jButton6Effect1;

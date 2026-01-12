@@ -117,7 +117,7 @@ public class MedicineAnalysisPanel extends javax.swing.JPanel {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
-        parent.showPanel(new Dashboard(parent));
+        parent.showPanel(new PatientRecords(parent));
     }//GEN-LAST:event_jButton1MouseClicked
 
 

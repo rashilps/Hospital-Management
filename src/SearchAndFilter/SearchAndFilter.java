@@ -9,6 +9,7 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
+import hospital.management.Dashboard;
 import hospital.management.MyConnection;
 import java.sql.ResultSet;
 import java.util.HashMap;
@@ -286,7 +287,7 @@ public class SearchAndFilter extends javax.swing.JPanel {
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
         // TODO add your handling code here:
-        parent.showPanel(new SearchAndFilter(parent));
+        parent.showPanel(new Dashboard(parent));
     }//GEN-LAST:event_jButton5MouseClicked
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
