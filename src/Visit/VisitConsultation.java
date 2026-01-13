@@ -133,7 +133,7 @@ public class VisitConsultation extends javax.swing.JPanel {
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/mr_1_50.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Panacea_Health_Record_50_1_50_1_50.png"))); // NOI18N
 
         jButton6Effect1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton6Effect1.setText("Treatment Effectiveness Report");
@@ -188,7 +188,7 @@ public class VisitConsultation extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton6Effect1)
-                .addGap(88, 88, 88)
+                .addGap(86, 86, 86)
                 .addComponent(jButton8)
                 .addGap(40, 40, 40))
             .addGroup(jPanel3Layout.createSequentialGroup()
@@ -215,14 +215,11 @@ public class VisitConsultation extends javax.swing.JPanel {
                     .addComponent(jButton4Update1))
                 .addGap(27, 27, 27)
                 .addComponent(jButton4Update)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(38, 38, 38)
-                        .addComponent(jButton8))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addComponent(jButton6Effect1)))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton6Effect1)
+                    .addComponent(jButton8))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -306,6 +303,8 @@ public class VisitConsultation extends javax.swing.JPanel {
 
     private void jButton4Update1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4Update1MouseClicked
         // TODO add your handling code here:
+                parent.showPanel(new UpdateVisit(parent));
+
     }//GEN-LAST:event_jButton4Update1MouseClicked
 
     private void jButton4Update1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4Update1ActionPerformed
